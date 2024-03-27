@@ -5,17 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
     </head>
     <body>
-    
-    <div class="container">
-        <div class="header">
-            <div class="toggle"></div>
-            <input type="text" class="search"  placeholder="Search for your preferred city...">
-            <div class="location"><i class="fas fa-map-marker-alt"></i></div>
-        </div>
-        <div class="main">
-            <div class="current">
+        <section>
+            <header>
+              <div id="toggles">
+                <input type="checkbox" id="toggle" class="checkbox" />
+                <label for="toggle" class="switch"></label>
+              </div>
+              <div id="search_bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" />
+              </div>
+              <div id="current_loc"></div>
+            </header>
+            <main>
+              <div id="date">
+                <h2>Country</h2>
+                <p>
+                  <span id="hours">09</span>:<span id="minutes">00</span>:<span
+                    id="seconds"
+                    >00</span
+                  >
+                </p>
+                <span id="day">
+                  <ul>
+                    <li id="weekindays"></li>
+                    <li id="weekday"></li>
+                    <li id="months"></li>
+                  </ul>
+                </span>
+              </div>
+            </main>
+          </section>
                 <h1>24°C</h1>
                 <p>Athens</p>
                 <p>09:03 | Thursday, 31 Aug</p>
@@ -128,3 +151,4 @@
     git commit -m"uteryergbej"
     git push origin main
  -->
+ 
